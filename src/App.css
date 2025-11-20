@@ -1,0 +1,144 @@
+
+html, body {
+  height: 100%; 
+  margin: 0;
+  padding: 0;
+  overflow-y: auto; 
+}
+
+
+
+header{
+  border-bottom: 1px solid grey;
+  
+  
+}
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; 
+  background-color: white; 
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+ body {
+  padding-top: 60Px;
+} 
+
+
+
+.custom-border {
+  border: 2px solid #2161a4;
+  border-radius: 5px;
+}
+.container {
+  overflow: hidden; 
+}
+
+.card-body h5{
+  text-align: center;
+}
+.card-body .btn {
+  align-self: center; 
+  margin-top: auto; 
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto; 
+}
+
+.nav-link {
+  color: #333; 
+  font-weight: 500; 
+  transition: all 0.3s ease-in-out; 
+}
+
+
+.nav-link:hover {
+  color: #dc3545; 
+  text-decoration: none; 
+}
+
+
+.nav-item:nth-child(1) .nav-link:hover {
+  color: #007bff; 
+}
+.nav-item:nth-child(2) .nav-link:hover {
+  color: #28a745; 
+}
+.nav-item:nth-child(4) .nav-link:hover {
+  color: #ffb703; 
+}
+
+
+.active-link {
+  color: #dc3545; 
+  font-weight: bold; 
+  border-bottom: 2px solid #dc3545; 
+}
+aside{
+  text-align: center;
+  padding: 50px 20px;
+  border-right: solid lightgray;
+}
+
+aside button{
+  width: 100%;
+  height: 50px;
+  border: none;
+  margin-bottom: 10px;
+}
+.row {
+  display: flex; 
+  flex-wrap: wrap; 
+}
+
+.row .col-md-4 {
+  flex: 1 1 calc(33.333% - 20px); 
+  max-width: calc(33.333% - 20px); 
+  margin: 10px; 
+  box-sizing: border-box; 
+}
+
+.card {
+  height: 100%; 
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between; 
+}
+.card-img {
+  width: 100%; 
+  height: 200px; 
+  object-fit: cover; 
+  border-radius: 5px; 
+}
+.card-img-top {
+  width: 100%; 
+  height: 200px; 
+  object-fit: cover; 
+  border-radius: 5px; 
+}
+.h1{
+  color: #080707;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+.button{
+  background-color: #36b955;
+  border-radius: 5px;
+  margin-bottom: 5%;
+  height: 40px;
+}
+.button:hover {
+  background-color: #9d2020; 
+  transform: scale(1.05); 
+  
+}

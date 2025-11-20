@@ -1,0 +1,18 @@
+/* Header.css */
+
+.custom-nav {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.custom-nav:hover {
+  color: #ff4d4d !important;
+  transform: scale(1.05);
+}
+
+.first-letter {
+  color: #ff4d4d;
+  font-weight: bold;
+  font-size: 18px;
+}
