@@ -8,9 +8,7 @@ const Login = () => {
     const navigate = useNavigate()
     const [login , setLogin] = useContext(loginStatus)
 
-
     const changeData =(e) =>{
-        
         setDetails({...Details ,[e.target.name]: e.target.value})
     }
 
@@ -18,14 +16,12 @@ const Login = () => {
         e.preventDefault();
         console.log(Details);
 
-
         const {username,password} = Details;
-        if(username==="Bhanukeerthi" && password==="bhanu123"){
-            navigate("/Dashboard")
-            +
-            setLogin(true)
-        }
 
+        if(username==="Bhanukeerthi" && password==="bhanu123"){
+            setLogin(true);       // FIRST fix
+            navigate("/Dashboard"); // SECOND fix
+        }
         else{
             alert("invalid credentials")
         }
@@ -41,9 +37,8 @@ const Login = () => {
                 <input type='Submit' className='form-control mb-3 btn btn-success'/>
              </form>
         </div>
-       
     </div>
   )
 }
 
-export default Login
+export default Login;
