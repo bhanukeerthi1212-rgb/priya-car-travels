@@ -9,7 +9,8 @@ const CarDetails = () => {
 
     useEffect(() => {
         axios
-            axios.get(`https://priya-car-travels-api.onrender.com/cars/${id}`)
+      axios.get(`https://priya-car-travels-api.onrender.com/cars/${id}`)
+
 
             .then((res) => setCar(res.data))
             .catch((err) => console.log(err))
