@@ -7,7 +7,7 @@ const Cars = () => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-  axios.get("https://priya-car-travels-api.onrender.com/cars")
+  axios.get("https://priya-car-travels-api.onrender.com/car")
 // ✅ correct API
             .then((res) => setData(res.data))
             .catch((err) => console.log(err));
