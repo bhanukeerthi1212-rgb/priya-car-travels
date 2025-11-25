@@ -1,0 +1,204 @@
+.cars-container {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.cars-heading {
+  font-size: 35px;
+  font-weight: 700;
+  color: #1a237e;
+  margin-bottom: 40px;
+}
+
+.cars-grid {
+  display: grid;
+  gap: 25px;
+  justify-content: center;
+}
+
+.car-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.car-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.car-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.car-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.car-price {
+  margin: 8px 0 15px;
+  color: #444;
+}
+
+.car-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.btn-details {
+  width: 100%;
+  padding: 10px;
+  background: #1e88e5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.btn-details:hover {
+  background: #0d47a1;
+}
+
+.btn-book {
+  width: 100%;
+  padding: 10px;
+  background: #43a047;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.btn-book:hover {
+  background: #1b5e20;
+}
+
+/* ✅ Responsive Fix */
+@media (min-width: 768px) {
+  .cars-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .cars-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* Fade-in animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Card styling */
+.car-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+/* Hover effect */
+.car-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.15);
+}
+
+/* Image styling */
+.car-card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+/* Title */
+.car-card h5 {
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Buttons */
+.car-card .btn {
+  width: 100%;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.car-card .btn:hover {
+  transform: scale(1.05);
+}
+/* Title Styling */
+.premium-title {
+  font-weight: 700;
+  color: #0a3d62;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Car Card Look */
+.car-card {
+  border-radius: 12px;
+  overflow: hidden;
+  background: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #e0e6ed;
+}
+
+/* Hover Animation */
+.car-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Car Image */
+.car-img {
+  height: 220px;
+  object-fit: cover;
+}
+
+/* Car Name */
+.car-name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2d3436;
+}
+
+/* Price */
+.price-text {
+  font-size: 16px;
+  color: #e63946;
+  font-weight: 600;
+}
+
+/* Buttons Animation */
+.action-btn {
+  transition: 0.3s ease;
+}
+
+.action-btn:hover {
+  transform: scale(1.08);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
