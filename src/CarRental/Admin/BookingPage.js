@@ -13,10 +13,15 @@ const BookingPage = () => {
   });
 
   useEffect(() => {
-    axios.get(`http://localhost:4000/car/${id}`)
+    axios.get(`https://priya-car-travels-api.onrender.com/cars/${id}`)
+
       .then(res => setCar(res.data))
       .catch(err => console.error(err));
   }, [id]);
+  if (!car) {
+  return <h3 className="text-center p-5">Loading car details...</h3>;
+}
+
 
   const handleChange = (e) => {
     setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));
