@@ -142,3 +142,14 @@ button:focus {
   transform: scale(1.05); 
   
 }
+/* Fix for Services Cards on Mobile */
+.card {
+  width: 100% !important;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.card h5,
+.card p {
+  text-align: center;
+}

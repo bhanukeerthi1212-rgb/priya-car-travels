@@ -6,7 +6,7 @@ const Login = () => {
 
     const [Details,setDetails] = useState({});
     const navigate = useNavigate()
-    const [login , setLogin] = useContext(loginStatus)
+    const [, setLogin] = useContext(loginStatus)
 
     const changeData =(e) =>{
         setDetails({...Details ,[e.target.name]: e.target.value})
@@ -19,8 +19,8 @@ const Login = () => {
         const {username,password} = Details;
 
         if(username==="Bhanukeerthi" && password==="bhanu123"){
-            setLogin(true);       // FIRST fix
-            navigate("/Dashboard"); // SECOND fix
+            setLogin(true);         // ✔ First update login state
+            navigate("/Dashboard"); // ✔ Then navigate
         }
         else{
             alert("invalid credentials")

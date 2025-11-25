@@ -6,9 +6,9 @@ import Header from "./CarRental/Header";
 import Footer from "./CarRental/Footer";
 import Routing from "./CarRental/Routing";
 import { createContext, useState } from "react";
-import MobileContainer from "./Redux/Store/MobileContainer";
-import { Provider } from "react-redux";
-import { store } from "./Redux/Store/Store";
+// import MobileContainer from "./Redux/Store/MobileContainer";
+// import { Provider } from "react-redux";
+// import { store } from "./Redux/Store/Store";
 export const loginStatus = createContext()
 
 

@@ -1,16 +1,16 @@
-import axios from 'axios'
-import React, { useEffect, useState } from 'react'
+import axios from "axios";
+import { useEffect, useState } from "react";
 
-const useCallApi = (Api) => {
-    const [data,setData] = useState([])
-    useEffect(()=>{
-        axios.get(Api)
-        .then((res) =>setData(res.data))
-        .catch((err)=>console.error(err))
-    })
-  return  data
-   
-  
-}
+const useCallApi = (url) => {
+  const [data, setData] = useState([]);
 
-export default useCallApi
+  useEffect(() => {
+    axios.get(url)
+      .then((res) => setData(res.data))
+      .catch((err) => console.log(err));
+  }, [url]);
+
+  return data;
+};
+
+export default useCallApi;

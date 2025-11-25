@@ -6,7 +6,8 @@ const Cars = () => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        axios.get("https://priya-car-travels-api.onrender.com/cars")
+        axios.get("https://priya-car-travels-api.onrender.com/car")
+    // ← FIXED API
             .then((res) => setData(res.data))
             .catch((err) => console.log(err));
     }, []);
@@ -19,12 +20,11 @@ const Cars = () => {
                 {data.map((car, index) => (
                     <div key={index} className="col-md-4 mb-3">
                         <div className="card custom-border">
-                            
-                            {/* FIXED ALT WARNING */}
+
                             <img 
                                 src={car.image} 
                                 className="card-img-top"
-                                alt={car.name} 
+                                alt={car.name}
                             />
 
                             <div className="card-body">

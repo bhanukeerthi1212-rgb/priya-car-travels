@@ -1,0 +1,71 @@
+/* -------- PREMIUM SERVICES PAGE GRID ------ */
+
+.services-container {
+  padding: 40px 15px;
+}
+
+.services-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  color: #d61525;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* GRID SYSTEM */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* SERVICE CARD */
+.service-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.12);
+  transition: all 0.3s ease-in-out;
+  border-left: 6px solid #cf142b;
+  cursor: pointer;
+}
+
+/* HOVER EFFECT */
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 15px 30px rgba(0,0,0,0.18);
+  border-left-color: #2c7ef4;
+}
+
+/* CARD TITLE */
+.service-card h5 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+/* CARD TEXT */
+.service-card p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+@media (max-width: 992px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .services-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

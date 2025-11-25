@@ -1,18 +1,52 @@
 {
-    "name": [],
-    "enquiry": [],
-    "students": [
-        {
-            "name": "bhanu",
-            "role": "ui ux designing",
-            "age": 24
-        }
-    ],
-    "cars": [
-        {
-            "brand": "Toyota",
-            "model": "Corolla",
-            "year": 2022
-        }
-    ]
+  "cars": [
+    {
+      "id": "c101",
+      "name": "Toyota Innova Crysta",
+      "model": "2023",
+      "category": "SUV",
+      "pricePerDay": 2500,
+      "image": "https://stimg.cardekho.com/images/carexteriorimages/930x620/Toyota/Innova-Crysta/10584/1682501616137/front-left-side-47.jpg"
+    },
+    {
+      "id": "c102",
+      "name": "Hyundai Verna",
+      "model": "2024",
+      "category": "Sedan",
+      "pricePerDay": 1800,
+      "image": "https://imgd.aeplcdn.com/272x153/n/cw/ec/144495/verna-exterior-right-front-three-quarter.jpeg"
+    },
+    {
+      "id": "c103",
+      "name": "Maruti Suzuki Ertiga",
+      "model": "2023",
+      "category": "MUV",
+      "pricePerDay": 2000,
+      "image": "https://stimg.cardekho.com/images/carexteriorimages/930x620/Maruti/Ertiga/10575/1680079430829/front-left-side-47.jpg"
+    },
+    {
+      "id": "c104",
+      "name": "Mahindra XUV700",
+      "model": "2024",
+      "category": "SUV",
+      "pricePerDay": 3000,
+      "image": "https://imgd.aeplcdn.com/272x153/n/cw/ec/110383/xuv700-exterior-right-front-three-quarter.jpeg"
+    },
+    {
+      "id": "c105",
+      "name": "Honda City",
+      "model": "2023",
+      "category": "Sedan",
+      "pricePerDay": 1700,
+      "image": "https://stimg.cardekho.com/images/carexteriorimages/930x620/Honda/City/8357/1638424868690/front-left-side-47.jpg"
+    },
+    {
+      "id": "c106",
+      "name": "Tata Safari",
+      "model": "2024",
+      "category": "SUV",
+      "pricePerDay": 3200,
+      "image": "https://imgd.aeplcdn.com/272x153/n/cw/ec/112943/safari-facelift-exterior-right-front-three-quarter.jpeg"
+    }
+  ]
 }
